@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WritingLayer.Auth": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

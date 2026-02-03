@@ -1,0 +1,19 @@
+<Solution>
+  <Project Path="WritingLayer.Ai/WritingLayer.Ai.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="c19dc69c-50be-4f62-b29c-3369022866ad">
+    <Build Project="false" />
+  </Project>
+  <Project Path="WritingLayer.Auth/WritingLayer.Auth.csproj" />
+  <Project Path="WritingLayer.backend/WritingLayer.backend.csproj" />
+  <Project Path="WritingLayer.Frontend/writinglayer.frontend.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="WritingLayer.Gateway/WritingLayer.Gateway.csproj" />
+  <Project Path="WritingLayer.LaTeXish/WritingLayer.LaTeXish.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="WritingLayer.Vector/WritingLayer.Vector.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="fe4c2a90-38c8-48f9-9647-44b08332df17">
+    <Build Project="false" />
+  </Project>
+</Solution>

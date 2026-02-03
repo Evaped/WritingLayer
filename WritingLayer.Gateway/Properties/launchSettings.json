@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WritingLayer.Gateway": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
