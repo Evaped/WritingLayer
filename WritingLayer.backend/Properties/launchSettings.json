@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "WritingLayer.backend": {
+    "WritingLayer.Backend": {
       "commandName": "Project"
     },
     "Container (Dockerfile)": {
