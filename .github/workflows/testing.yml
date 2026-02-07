@@ -1,0 +1,41 @@
+name: WritingLayer CI
+
+on:
+  push:
+    branches: ["main", "feature/*"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  # Job 1: Test all C# code(Backend, Auth, Database, Tools) through combined test project
+  test-csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Restore dependencies
+        run: dotnet restore WritingLayer.Backend.Test/WritingLayer.Backend.Test.csproj
+      - name: Build project
+        run: dotnet build WritingLayer.Backend.Test/WritingLayer.Backend.Test.csproj --no-restore --configuration Release
+      - name: Run tests
+        run: dotnet test WritingLayer.Backend.Test/WritingLayer.Backend.Test.csproj --no-build --configuration Release
+
+  # Job 2: Test alt Python logik (AI & Vector)
+  test-python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          if [ -f Ai/requirements.txt ]; then pip install -r Ai/requirements.txt; fi
+          if [ -f Vector/requirements.txt ]; then pip install -r Vector/requirements.txt; fi
+          pip install pytest
+      - name: Run tests
+        run: pytest WritingLayer.AIAndVector.Test/

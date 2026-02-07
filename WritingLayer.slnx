@@ -2,8 +2,13 @@
   <Project Path="WritingLayer.Ai/WritingLayer.Ai.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="c19dc69c-50be-4f62-b29c-3369022866ad">
     <Build Project="false" />
   </Project>
+  <Project Path="WritingLayer.AIAndVector.Test/WritingLayer.AIAndVector.Test.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="667d4eb1-a128-43eb-ad39-fffba970c40f">
+    <Build Project="false" />
+  </Project>
   <Project Path="WritingLayer.Auth/WritingLayer.Auth.csproj" />
-  <Project Path="WritingLayer.backend/WritingLayer.backend.csproj" />
+  <Project Path="WritingLayer.Backend.Test/WritingLayer.Backend.Test.csproj" Id="a1565464-3408-4ac8-8259-7634456d0681" />
+  <Project Path="WritingLayer.Backend/WritingLayer.Backend.csproj" Id="69309958-fc8b-409c-ba1f-ccee87a85c82" />
+  <Project Path="WritingLayer.Database/WritingLayer.Database.csproj" Id="6dcf2ca7-7840-4493-a61f-632686e89b0d" />
   <Project Path="WritingLayer.Frontend/writinglayer.frontend.esproj">
     <Build />
     <Deploy />
@@ -13,6 +18,7 @@
     <Build />
     <Deploy />
   </Project>
+  <Project Path="WritingLayer.Tools/WritingLayer.Tools.csproj" Id="24bb0637-ffa2-46c0-83b7-041a33613d3b" />
   <Project Path="WritingLayer.Vector/WritingLayer.Vector.pyproj" Type="888888a0-9f3d-457c-b088-3a5042f75d52" Id="fe4c2a90-38c8-48f9-9647-44b08332df17">
     <Build Project="false" />
   </Project>
