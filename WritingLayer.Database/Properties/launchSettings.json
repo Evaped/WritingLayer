@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WritingLayer.Database": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
